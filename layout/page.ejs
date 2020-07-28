@@ -1,6 +1,6 @@
 <div id="article-banner">
   <h2><%- page.title %></h2>
-  <p class="post-date"><%- date(page.date, "YYYY-MM-DD") %></p>
+  <!-- <p class="post-date"><%- date(page.date, "MM/DD/YYYY") %></p> -->
   <div class="arrow-down">
     <a href="javascript:;"></a>
   </div>
@@ -8,13 +8,13 @@
 <main class="app-body">
   <article class="post-article">
     <section class="markdown-content"><%- page.content %></section>
-    <% if (page.tags && page.tags.length) { %>
+    <!-- <% if (page.tags && page.tags.length) { %>
       <div class="tags">
         <span>Tags:</span>
         <%- partial('_partial/tag', { tags: page.tags }) %>
       </div>
-    <% } %>
-    <div class="money-like">
+    <% } %> -->
+    <!-- <div class="money-like">
       <div class="reward-btn">
         赏
         <span class="money-code">
@@ -29,7 +29,12 @@
         </span>
       </div>
       <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+    </div> -->
+    <div class="time-tag">
+      <span><%- config.author %></span>
+      <span><%- date(page.date, "YYYY-MM-DD") %></span>
     </div>
+
     <div class="qrcode">
       <canvas id="share-qrcode"></canvas>
       <p class="notice">扫描二维码，分享此文章</p>

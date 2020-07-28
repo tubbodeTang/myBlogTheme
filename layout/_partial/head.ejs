@@ -3,11 +3,12 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta name="description" content="<%= config.description || theme.description %>">
   <meta name="keyword" content="<%= config.keyword || theme.keyword %>">
-  <% if (config.favicon || theme.favicon){ %>
+  <link rel="shortcut icon" type="image/ico" href="/css/images/myLogo.png"/> 
+  <!-- <% if (config.favicon || theme.favicon){ %>
     <link rel="shortcut icon" type="image/ico" href="<%= config.favicon || theme.favicon %>"/> 
   <% } else { %>
-    <%- favicon_tag('css/images/logo.png') %>
-  <% } %>
+    <%- favicon_tag('css/images/myLogo.jpg') %>
+  <% } %> -->
   <title>
     <% if (page.title){ %>
       <%= page.title %> | <%= config.title %>
@@ -25,5 +26,5 @@
   <%- js(['js/qrious', 'js/gitment']) %>
 </head>
 <div class="wechat-share">
-  <img src="/css/images/logo.png" />
+  <!-- <img src="/css/images/myLogo.jpg" /> -->
 </div>

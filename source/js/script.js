@@ -42,7 +42,7 @@
     $('.menu-mask').toggleClass('open')
   })
 
-  $('#tag-cloud a').on('click', function () {
+  $('#tag-cloud.tagpage a').on('click', function () {
     var list = $('.tag-list')
     var name = $(this).data('name')
     var maoH = list.find('#' + name).offset().top
